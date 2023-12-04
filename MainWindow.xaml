@@ -29,7 +29,7 @@
                 <TextBlock VerticalAlignment="Center" FontSize="30" KeyDown="TextBlock_KeyDown" KeyUp="TextBlock_KeyUp" x:Name="VvodBlock"/>
             </Border>
         </Grid>
-        <Grid Grid.Row="1" Grid.Column="1">
+        <Grid x:Name="GridForButtons" Grid.Row="1" Grid.Column="1">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition/>
                 <ColumnDefinition/>
@@ -38,16 +38,16 @@
                 <RowDefinition/>
                 <RowDefinition/>
             </Grid.RowDefinitions>
-            <Border Background="LightGoldenrodYellow" BorderBrush="Black" BorderThickness="3" CornerRadius="20" Margin="3" Name="ButtonE">
+            <Border Background="LightGoldenrodYellow" BorderBrush="Black" BorderThickness="3" CornerRadius="20" Margin="3">
                 <TextBlock Text="e" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="40"/>
             </Border>
-            <Border Grid.Row="1" Background="LightBlue" BorderBrush="Black" BorderThickness="3" CornerRadius="20" Margin="3" Name="ButtonD">
+            <Border Grid.Row="1" Background="LightBlue" BorderBrush="Black" BorderThickness="3" CornerRadius="20" Margin="3">
                 <TextBlock Text="d" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="40"/>
             </Border>
-            <Border Grid.Column="1" Background="LightPink" BorderBrush="Black" BorderThickness="3" CornerRadius="20" Margin="3" Name="ButtonR">
+            <Border Grid.Column="1" Background="LightPink" BorderBrush="Black" BorderThickness="3" CornerRadius="20" Margin="3">
                 <TextBlock Text="r" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="40"/>
             </Border>
-            <Border Grid.Row="1" Grid.Column="1" Background="LightGreen" BorderBrush="Black" BorderThickness="3" CornerRadius="20" Margin="3" Name="ButtonF">
+            <Border Grid.Row="1" Grid.Column="1" Background="LightGreen" BorderBrush="Black" BorderThickness="3" CornerRadius="20" Margin="3">
                 <TextBlock Text="f" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="40"/>
             </Border>
         </Grid>
