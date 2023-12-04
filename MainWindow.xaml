@@ -1,0 +1,63 @@
+﻿<Window x:Class="Тренировка_клавиатурного_тренажера.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Тренировка_клавиатурного_тренажера"
+        mc:Ignorable="d"
+        Title="Тренировка" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Column="1" Margin="0,10">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Border Background="Aquamarine" BorderBrush="Black" BorderThickness="4" CornerRadius="10" Margin="0,1">
+                <TextBlock VerticalAlignment="Center" FontSize="30" Name="VivodBlock"/>
+            </Border>
+            <Border Grid.Row="1" Background="Aquamarine" BorderBrush="Black" BorderThickness="4" CornerRadius="10">
+                <TextBlock VerticalAlignment="Center" FontSize="30" KeyDown="TextBlock_KeyDown" KeyUp="TextBlock_KeyUp" x:Name="VvodBlock"/>
+            </Border>
+        </Grid>
+        <Grid Grid.Row="1" Grid.Column="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Border Background="LightGoldenrodYellow" BorderBrush="Black" BorderThickness="3" CornerRadius="20" Margin="3" Name="ButtonE">
+                <TextBlock Text="e" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="40"/>
+            </Border>
+            <Border Grid.Row="1" Background="LightBlue" BorderBrush="Black" BorderThickness="3" CornerRadius="20" Margin="3" Name="ButtonD">
+                <TextBlock Text="d" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="40"/>
+            </Border>
+            <Border Grid.Column="1" Background="LightPink" BorderBrush="Black" BorderThickness="3" CornerRadius="20" Margin="3" Name="ButtonR">
+                <TextBlock Text="r" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="40"/>
+            </Border>
+            <Border Grid.Row="1" Grid.Column="1" Background="LightGreen" BorderBrush="Black" BorderThickness="3" CornerRadius="20" Margin="3" Name="ButtonF">
+                <TextBlock Text="f" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="40"/>
+            </Border>
+        </Grid>
+        <Grid Grid.Row="2" Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Button x:Name="StartButton" Background="AntiqueWhite" Margin="10,5" Content="Start" FontSize="30" Click="Start_Button" />
+            <Button Grid.Row="1" x:Name="StopButton" Background="AntiqueWhite" Margin="10,5" Content="Stop" FontSize="30" IsEnabled="False" Click="Stop_Button" />
+        </Grid>
+    </Grid>
+</Window>

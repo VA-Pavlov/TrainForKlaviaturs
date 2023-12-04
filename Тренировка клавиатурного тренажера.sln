@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32602.215
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Тренировка клавиатурного тренажера", "Тренировка клавиатурного тренажера.csproj", "{A1CCE9A8-69AF-45AF-A126-C3ECFF4AAC1B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A1CCE9A8-69AF-45AF-A126-C3ECFF4AAC1B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1CCE9A8-69AF-45AF-A126-C3ECFF4AAC1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1CCE9A8-69AF-45AF-A126-C3ECFF4AAC1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1CCE9A8-69AF-45AF-A126-C3ECFF4AAC1B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {943BBA23-D71A-499F-A595-9F6FD70C3AD7}
+	EndGlobalSection
+EndGlobal
